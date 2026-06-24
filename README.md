@@ -85,8 +85,10 @@ Basic rule: You Get What You Ask For (YGWYAF)
 
 ## Requirements
 
+```
 Python ≥ 3.10
 PyYAML ≥ 6.0
+```
 
 ## License
 

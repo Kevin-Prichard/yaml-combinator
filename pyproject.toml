@@ -1,0 +1,22 @@
+[project]
+name = "yaml-combinator"
+version = "0.1.0"
+description = "Combine multiple YAML files into one, and interpolate variable refs."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["pyyaml>=6.0"]
+
+[project.scripts]
+yc = "yaml_combinator.yc:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

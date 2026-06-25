@@ -5,21 +5,22 @@
 
 `#!import <path>`
 
-2. interpolates \*VAR references.  The intent is directed document composition and variable sharing across documents.
+2. interpolates \*VAR references.
 
----
+
+The intent is directed document composition and variable sharing across documents.
+
 
 ## What's the point?
 Best for use-cases where your existing YAML-consuming ecosystem doesn't provide templating, merging or interpolation.
 
-You've got YAML files — configs, variables, templates.  You want to produce a finished singular document: 
+You've got multiple YAML files — configs, templates, variables.  You want to produce a finished singular document: 
 
 - **Combines** multiple YAML files into a single, clean output
 - **Resolves `#!import` directives** — one file can pull in another, in a tree-shaped import hierarchy
 - **Interpolates anchor variables** — define a value once with `&VAR_NAME`,
   and every `*VAR_NAME` reference across all your files gets the same value.
 
----
 
 ## Installation
 
